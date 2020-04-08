@@ -10,20 +10,20 @@ module.exports = (env) => {
 
   if (env.NODE_ENV === 'production') {
     plugins.push(
-      new CleanWebpackPlugin(['dist'], {root: __dirname})
+      new CleanWebpackPlugin(['dist'], { root: __dirname })
     )
   }
 
   return {
 
     entry: {
-      "home": path.resolve(__dirname, 'src/entries/home.js'),
-      "redux": path.resolve(__dirname, 'src/entries/redux.js'),
+      "app": path.resolve(__dirname, 'src/entries/app.js'),
+      // "redux": path.resolve(__dirname, 'src/entries/redux.js'),
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'js/[name].[hash].js',
-      publicPath: path.resolve(__dirname, 'dist')+"/",
+      publicPath: path.resolve(__dirname, 'dist') + "/",
       chunkFilename: 'js/[id].[chunkhash].js',
     },
     devServer: {
