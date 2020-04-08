@@ -11,24 +11,25 @@ class Header extends Component {
         <nav>
           <ul>
             <li>
-              <Link exact to="/" activeClassName="is-selected">
+              {/* El exact to sirve para señalar la ruta que parte del inicio en este caso Inicio. */}
+              <NavLink exact to="/" activeClassName="is-selected">
                 Inicio
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/videos" activeClassName="is-selected">
+              <NavLink to="/videos" activeClassName="is-selected">
                 Videos
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contacto" activeClassName="is-selected">
+              <NavLink to="/contacto" activeClassName="is-selected">
                 Contacto
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/perfil" activeClassName="is-selected">
+              <NavLink to="/perfil" activeClassName="is-selected">
                 Perfil
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
