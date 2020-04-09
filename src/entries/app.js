@@ -65,5 +65,3 @@ render(
     </Provider>
   </BrowserRouter>
   , homeContainer);
-
-
