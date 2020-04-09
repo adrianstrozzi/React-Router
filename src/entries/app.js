@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { render } from 'react-dom';
 import Videos from '../pages/containers/videos';
 import Home from '../pages/components/home';
-import Contact from '../pages/component/contact';
+import Contact from '../pages/components/contact';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reducer from '../reducers/index';
