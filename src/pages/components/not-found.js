@@ -3,8 +3,8 @@ import './generic-page.css';
 
 class NotFound extends PureComponent {
   handleRandomClick = () => {
-    const random = Math.round(Math.random() * (10 - 1) + 1)
-    this.props.history.push(`/videos?id=${random}`, { id: random }
+    const random = Math.round(Math.random() * (10 - 1) + 1);
+    this.props.history.push(`/videos?id=${random}`, { id: random })
   }
   handleForwardClick = () => {
     this.props.history.goForward()
