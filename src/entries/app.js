@@ -11,7 +11,7 @@ import { Map as map } from 'immutable';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { BrowserRouter, Route, Swicth, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Header from '../pages/components/header.js';
 // function logger({ getState, dispatch}) {
 //   return (next) => {
@@ -58,6 +58,7 @@ render(
           <Route exact path="/" component={Home} />
           <Route exact path="/videos" component={Videos} />
           <Route exact path="/contacto" component={Contact} />
+          <Redirect from="/v" to="/videos" />
           <Route component={NotFound} />
         </Switch>
       </Fragment>
