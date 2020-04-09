@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import './media.css';
 
+
 class Media extends PureComponent {
   state = {
     author: 'Leonidas Esteban'
