@@ -7,7 +7,15 @@
 }
 
 .SadFace {
-  font-size: 50px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.NotFound {
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
 
 .Page .Button {
